@@ -1,0 +1,22 @@
+{% extends "core/base.html" %}{% load static %}
+{% block contenido %}
+    <div class="contenedor-formulario">
+        <div class="toggle">
+        </div>
+
+        <div class="formulario">
+            <h2>Iniciar Sesion</h2>
+            <hr>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesion">
+                <hr>
+            </form>
+        </div>
+
+        <div class="reset-pass">
+            <a href="#">Olvidaste tu Contraseña?</a>
+        </div>
+    </div>
+{% endblock %}

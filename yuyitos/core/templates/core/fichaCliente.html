@@ -1,0 +1,80 @@
+{% extends "core/base.html" %}{% load static %}
+{% block contenido %}
+<h2>PAGO MONTOS FIADOS</h2>
+<div class="galeria and enlinea">
+
+    <div class="buscarut">
+        <h4>Buscar Rut</h4>
+        <input type="search" name="Rut" id="input-buscarut" placeholder="Ingrese rut" required>
+        <input type="submit" value="Buscar">
+    </div>
+
+    <div class="buscarnombre">
+        <h4>Buscar nombre</h4>
+        <input type="search" name="Nombre" id="input-buscanombre" placeholder="Ingrese nombre" required>
+        <input type="submit" value="Buscar">
+    </div>
+
+    <div class="galeria">
+        <table class="texto_negro and centrar">
+            <thead>
+                <tr>
+                    <th>
+                        Rut
+                    </th>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        Apellidos
+                    </th>
+                    <th>
+                        Telefono
+                    </th>
+                    <th>
+                        Direccion
+                    </th>
+                    <th>
+                        Correo Electronico
+                    </th>
+                    <th>
+                        Monto
+                    </th>
+                    <th>Opcion</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>20198140-9</th>
+                <th>Juan Manuel</th>
+                <th>Soto Aguilar</th>
+                <th>9 82241383</th>
+                <th>Marcela Paz 02216</th>
+                <th>cosmefulanito@gmail.com</th>
+                <th>$5000</th>
+                <th><button>PAGAR</button></th>
+            </tr>
+            <tr>
+                <th>20198140-9</th>
+                <th>Juan Manuel</th>
+                <th>Soto Aguilar</th>
+                <th>9 82241383</th>
+                <th>Marcela Paz 02216</th>
+                <th>cosmefulanito@gmail.com</th>
+                <th>$5000</th>
+                <th><button>PAGAR</button></th>
+            </tr>
+            <tr>
+                <th>20198140-9</th>
+                <th>Juan Manuel</th>
+                <th>Soto Aguilar</th>
+                <th>9 82241383</th>
+                <th>Marcela Paz 02216</th>
+                <th>cosmefulanito@gmail.com</th>
+                <th>$5000</th>
+                <th><button>PAGAR</button></th>
+            </tr>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

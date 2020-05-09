@@ -1,0 +1,134 @@
+{% extends "core/base.html" %}{% load static %}
+{% block contenido %}
+<h2>PRODUCTOS</h2>
+<hr>
+<div class="galeria">
+    <h5>Buscar Producto:</h5>
+    <input type="text">
+    <button>Buscar</button>
+</div>
+<hr>
+<div class="galeria">
+    <div class="producto">
+        <a href="{% url 'agregarProducto'%}">
+            <img src="{% static 'core/img/Mercaderia/1.jpg' %}" alt="1" class="imgproducto">
+            <h4>Cachantun 1l.</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $1000 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/2.jpg' %}" alt="2" class="imgproducto">
+            <h4>Jugo Polvo Turbo</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $250 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/3.jpg' %}" alt="3" class="imgproducto">
+            <h4>Jugo Polvo Vivo</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $250 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/4.jpg' %}" alt="4" class="imgproducto">
+            <h4>Cafe Polvo Monterrey</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $3500 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/5.jpg' %}" alt="5" class="imgproducto">
+            <h4>Cereal ChocoKris</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $3500 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/6.jpg' %}" alt="6" class="imgproducto">
+            <h4>Cereal Kids</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $150 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/7.jpg' %}" alt="7" class="imgproducto">
+            <h4>Cerveza Escudo 1l.</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $1800 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/8.jpg' %}" alt="8" class="imgproducto">
+            <h4>Galleta Bonobon</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $800 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/9.jpg' %}" alt="9" class="imgproducto">
+            <h4>Galleta Agua/Soda</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $800 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/10.jpg' %}" alt="10" class="imgproducto">
+            <h4>Galleta Soda Pack</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $1500 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/11.jpg' %}" alt="11" class="imgproducto">
+            <h4>Gomitas Mogul</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $2000 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/12.jpg' %}" alt="12" class="imgproducto">
+            <h4>Pack 24 Cristal 350g</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $5550 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/13.jpg' %}" alt="13" class="imgproducto">
+            <h4>Papitas Mons</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $1000 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/14.jpg' %}" alt="15" class="imgproducto">
+            <h4>Bebida Pepsi 3l.</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $1800 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+    <div class="producto">
+        <a href="">
+            <img src="{% static 'core/img/Mercaderia/16.jpg' %}" alt="16" class="imgproducto">
+            <h4>Te Club</h4>
+        </a>
+        <h5 class="texto_negro">Precio: $2500 C/U</h5>
+        <h6 class="texto_negro">Stock: 1000</h6>
+    </div>
+
+</div>
+{% endblock %}

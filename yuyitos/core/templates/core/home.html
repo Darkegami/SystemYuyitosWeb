@@ -1,0 +1,33 @@
+{% extends "core/base.html" %} {% load static %} 
+{%block contenido%}
+<h2>MENU ADMINISTRATIVO</h2>
+<hr>
+<nav>
+    <ul>
+        <li>
+            <a href="{% url 'crearCliente' %}">
+                <img src="{% static 'core/img/ClienteFiado.png' %}" alt="Logo" class="logoMenu">
+                <h3>Gestion Cliente Fiado</h3>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'fichaCliente' %}">
+            <img src="{% static 'core/img/PagoFiado.png' %}" alt="Logo" class="logoMenu">
+            <h3>Pago Fiado</h3>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'producto' %}">
+            <img src="{% static 'core/img/Store.png' %}" alt="Logo" class="logoMenu">
+            <h3>Productos</h3>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'carro' %}">
+            <img src="{% static 'core/img/CarroCompra.png' %}" alt="Logo" class="logoMenu">
+            <h3>Carro Compra</h3>
+            </a>
+        </li>
+    </ul>
+</nav>
+{%endblock%}

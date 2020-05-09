@@ -1,0 +1,60 @@
+{% extends "core/base.html" %}{% load static %}
+{% block contenido %}
+<H2>CARRO DE COMPRAS</H2>
+<HR></HR>
+<div class="galeria">
+    <div class="bloque_setenta and galeria">
+        <table class="texto_negro and centrar">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>02401430062020023</th>
+                <th>
+                    <img src="{% static 'core/img/Mercaderia/1.jpg'%}" alt="">
+                    Cachantun 1l.
+                </th>
+                <th>3</th>
+                <th>$3000</th>
+                <th><button>Cancelar</button></th>
+            </tr>
+            <tr>
+                <th>04205230062020064</th>
+                <th>
+                    <img src="{% static 'core/img/Mercaderia/3.jpg'%}" alt="">
+                    Jugo Vivo 7g
+                </th>
+                <th>10</th>
+                <th>$2500</th>
+                <th><button>Cancelar</button></th>
+            </tr>
+            <tr>
+                <th>03201230062020014</th>
+                <th>
+                    <img src="{% static 'core/img/Mercaderia/12.jpg'%}" alt="">
+                    Pack 24 Cristal 350g
+                </th>
+                <th>1</th>
+                <th>$5500</th>
+                <th><button>Cancelar</button></th>
+            </tr>
+        </table>
+
+    </div>
+    <div class="bloque_treinta">
+        <h2>Resumen de la Compra</h2>
+        <hr>
+        <h4>Total: $11000</h4>
+        <hr>
+        <button>Comprar con Efectivo</button>
+        <hr>
+        <button>Comprar Fiado</button>
+    </div>
+</div>
+{% endblock %}

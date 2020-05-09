@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuyitos Store</title>
+
+    {% load static %}
+    {% block css %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+   
+    <link rel="icon" href="{% static 'core/img/logo.png' %}">
+</head>
+<body  background="{% static 'core/img/maxresdefault.jpg' %}">
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="{% static 'core/img/logo.png' %}" alt="Logo" class="logo">
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Menu</a>
+                </li>
+                <li>
+                    <a href="{% url 'iniciarSesion' %}">Iniciar Sesion</a>
+                </li>
+                <li>
+                    <a href="{% url 'carro' %}">
+                        <img src="{% static 'core/img/CarroCompra.png'%}" alt="logo" class="logoheader">
+                    </a>
+                </li>              
+            </ul>   
+        </nav>
+        
+    </header>
+
+    <div id="principal" class="texto_blanco">
+    {% block contenido %}
+    {% endblock %}
+    <hr>
+    </div>
+
+    <footer>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="{% static 'core/img/logo.png' %}" alt="Logo" class="logo">
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Menu</a>
+                </li>
+                <li>
+                    <a href="">Mision y Vision</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="centrar and texto_blanco">Copyright © 2020 YuyitosApp . All rights reserved.</h2>
+    </footer>
+
+    {% block javascript %}
+    {% endblock %}
+</body>
+</html>

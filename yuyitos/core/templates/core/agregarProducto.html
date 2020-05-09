@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}{% load static %}
+{% block contenido %}
+<h2>AGREGAR PRODUCTO AL CARRO</h2>
+<hr>
+<div class="galeria">
+    <div class="bloque_medio">
+        <a href="{% url 'producto' %}">Productos/</a>
+        <img src="{% static 'core/img/Mercaderia/1.jpg' %}" alt="1" class="imgproducto">
+    </div>
+    <div class="bloque_medio">
+        <hr>
+        <H2>Cachantun 1 Litro</H2>
+        <h4>Precio: $1000</h4>
+        <hr>
+        <div class="galeria">
+            <input type="text">
+            <h4>Cantidad</h4>
+        </div>
+        <hr>
+        <button>Añadir al Carro de Compra</button>
+    </div>
+</div>
+{% endblock %}
